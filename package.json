@@ -4,12 +4,39 @@
   "description": "This is a shopping cart coding exercise",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
+    "format": "prettier \"src/**/* .{js,html,css}\" --write",
+    "lint": "eslint \"**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "canned -p 5000 ./server"
   },
-  "author": "",
+  "author": "Aravind",
   "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "parcel": "^2.0.0-beta.2",
+    "prettier": "^2.2.1"
+  },
   "dependencies": {
+    "@reach/router": "^1.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "canned": "^0.3.12"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "last 2 Safari versions"
+  ]
 }
