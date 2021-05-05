@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router } from "@reach/router";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
@@ -14,9 +14,13 @@ const App = () => {
     <React.StrictMode>
       <Provider store={store}>
         <div>
-          <Layout>
-            <Router></Router>
-          </Layout>
+          <Router>
+            <Layout>
+              <Switch>
+                <Route path="/" />
+              </Switch>
+            </Layout>
+          </Router>
         </div>
       </Provider>
     </React.StrictMode>
