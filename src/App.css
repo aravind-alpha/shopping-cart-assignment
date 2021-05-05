@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
