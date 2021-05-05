@@ -21,3 +21,9 @@ npm run server
 ```
 npm run dev
 ```
+
+- To format
+
+```
+npm run format
+```
