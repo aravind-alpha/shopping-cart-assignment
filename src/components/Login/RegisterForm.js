@@ -130,9 +130,9 @@ const RegisterForm = () => {
                 <div className="field">
                   <input
                     type="password"
-                    name="password"
+                    name="Password"
                     id="password"
-                    placeholder="password"
+                    placeholder="Password"
                     value={values.password}
                     onChange={handleChange}
                     onBlur={handleBlur}
