@@ -49,12 +49,13 @@
 .login-section_formGroup input:focus + label,
 .signup-section_formGroup input:focus + label {
   color: #50dae2;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 .login-section_formGroup label,
 .signup-section_formGroup label {
   letter-spacing: 0.05em;
   font-size: 0.5rem;
+  color: #999999;
 }
 .login-section_formGroup input:placeholder-shown + label,
 .signup-section_formGroup input:placeholder-shown + label {
