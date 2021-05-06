@@ -1,14 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Header from "../Header/Header.js";
 import Footer from "../Footer/Footer.js";
+import Routes from "../Layout/Routes.js";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <Fragment>
+    <BrowserRouter>
       <Header />
-      {children}
+      <Routes />
       <Footer />
-    </Fragment>
+    </BrowserRouter>
   );
 };
 
