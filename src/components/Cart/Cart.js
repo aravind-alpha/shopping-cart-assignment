@@ -34,7 +34,10 @@ const Cart = (props) => {
               data-product-id={item.id}
             >
               <img
-                src={item.imageURL}
+                src={
+                  require(`../../../static/images/products/${item.imageURL}`)
+                    .default
+                }
                 className="cart_list-img"
                 alt={item.name}
               />
@@ -89,7 +92,7 @@ const Cart = (props) => {
             className="btn-cart-checkout checkout-button"
             onClick={closeCart}
           >
-            <span className="checkout-text">Proceed to checkout</span>
+            <span className="checkout-text">Proceed to checkout</span>{" "}
             <span className="checkout-price">
               Rs.
               {cart.reduce(function (total, item) {
