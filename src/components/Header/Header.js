@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart.js";
-import Logo from "url:../../../static/images/logo.png";
+import Logo from "../../../static/images/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -73,8 +73,6 @@ const Header = () => {
               display: openCart ? "block" : "none",
             }}
           >
-            {/* <div className="dim"></div> */}
-
             <Cart closeCart={setOpenCart} />
           </div>
         </div>
