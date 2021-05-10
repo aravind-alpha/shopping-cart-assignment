@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// const Dotenv = require("dotenv-webpack");
 
 const entryPoint = path.resolve(__dirname, "./src/App.js");
 const port = 3000;
@@ -11,7 +10,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
   title: "Sabka Bazar",
   template: "./src/index.html",
   filename: "./index.html",
-  favicon: "./src/favicon.ico",
+  favicon: "./favicon.ico",
 });
 
 module.exports = {
@@ -24,10 +23,6 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
-      //   {
-      //     test: /\.scss$/,
-      //     use: ["style-loader", "css-loader", "sass-loader"],
-      //   },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
@@ -73,6 +68,5 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     htmlPlugin,
     new CleanWebpackPlugin(),
-    // new Dotenv(),
   ],
 };
