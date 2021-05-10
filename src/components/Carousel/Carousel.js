@@ -1,38 +1,22 @@
-import React from "react";
-import Slider from "react-slick";
-import "./Carousel.css";
+import React, { useState, useEffect } from "react";
+import CarouselBanner from "../../components/Carousel/CarouselBanner";
+import API from "../../API/apiCalls";
+import "./CarouselBanner.css";
 
-const Carousel = (props) => {
-  const { banner } = props;
+const Carousel = () => {
+  const [banner, setBanner] = useState([]);
 
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 400,
-    slideToShow: 1,
-    slideToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-  };
+  useEffect(() => {
+    async function bannersData() {
+      const response = await fetch(API.bannersURL);
+      const data = await response.json();
+      setBanner(data);
+    }
 
-  return (
-    <>
-      <Slider {...settings}>
-        {banner.map((data) => (
-          <div key={data.id}>
-            <img
-              src={
-                require(`../../../static/images/offers/${data.bannerImageUrl}`)
-                  .default
-              }
-              alt={data.bannerImageAlt}
-              width="100%"
-            />
-          </div>
-        ))}
-      </Slider>
-    </>
-  );
+    bannersData();
+  }, []);
+
+  return <CarouselBanner banner={banner} />;
 };
 
 export default Carousel;
