@@ -7,6 +7,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import reducer from "./redux/reducer";
 import Layout from "./components/Layout/Layout";
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   const store = createStore(reducer, composeWithDevTools());

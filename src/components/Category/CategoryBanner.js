@@ -17,6 +17,7 @@ const CategoryBanner = (props) => {
           alt={category.name}
           className="banner-image"
           width="100%"
+          height="auto"
         />
       </div>
       <div className="content">
