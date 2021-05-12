@@ -3,6 +3,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   font-family: "Dosis", sans-serif;
+  font-display: swap;
 }
 body a {
   text-decoration: none;

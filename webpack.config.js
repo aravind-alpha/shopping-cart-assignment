@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const { resolve } = require("path");
-const glob = require("glob");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
