@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const { resolve } = require("path");
 const glob = require("glob");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -68,13 +69,7 @@ module.exports = {
       favicon: "./favicon.ico",
     }),
     new ImageminPlugin({
-      cacheFolder: "./.cache",
-      externalImages: {
-        context: "static", // Important! This tells the plugin where to "base" the paths at
-        sources: glob.sync("./static/images/**/*.{jpg,png}"),
-        destination: "static/images",
-        fileName: "[path][name].[ext]", // (filePath) => filePath.replace('jpg', 'webp') is also possible
-      },
+      cacheFolder: resolve("./.cache"),
     }),
     new CleanWebpackPlugin(),
   ],
