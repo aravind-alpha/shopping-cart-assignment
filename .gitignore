@@ -61,5 +61,5 @@ typings/
 .next
 
 # parcel
-.parcel-cache
+.cache
 dist
