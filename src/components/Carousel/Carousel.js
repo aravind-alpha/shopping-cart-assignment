@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import CarouselBanner from "../../components/Carousel/CarouselBanner";
+import React, { useState, useEffect, lazy } from "react";
 import API from "../../API/apiCalls";
 import "./CarouselBanner.css";
+
+const CarouselBanner = lazy(() => import("../Carousel/CarouselBanner"));
 
 const Carousel = () => {
   const [banner, setBanner] = useState([]);

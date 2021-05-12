@@ -26,8 +26,8 @@ const CarouselBanner = (props) => {
                   .default
               }
               alt={data.bannerImageAlt}
-              width="100%"
-              height="100%"
+              width="inherit%"
+              height="inherit%"
             />
           </div>
         ))}

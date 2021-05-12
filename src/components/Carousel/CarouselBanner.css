@@ -4,6 +4,7 @@
 .slick-slide img {
   display: block;
   width: inherit;
+  height: inherit;
 }
 .slick-dots {
   bottom: 20px;

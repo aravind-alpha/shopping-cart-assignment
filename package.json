@@ -4,10 +4,10 @@
   "description": "This is a shopping cart coding exercise",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development --open",
+    "dev": "webpack serve --mode development --open --config webpack.config.js",
     "format": "prettier \"src/**/* .{js,html,css}\" --write",
     "lint": "eslint \"**/*.{js,jsx}\" --quiet",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.config.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "canned -p 5000 ./server",
     "server": "node ./server.js"
@@ -31,6 +31,7 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "imagemin-webpack-plugin": "^2.4.2",
     "json-server": "^0.16.3",
     "prettier": "^2.2.1",
     "redux-devtools-extension": "^2.13.9",

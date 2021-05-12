@@ -1,17 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+const glob = require("glob");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const entryPoint = path.resolve(__dirname, "./src/App.js");
 const port = 3000;
-
-const htmlPlugin = new HtmlWebPackPlugin({
-  title: "Sabka Bazar",
-  template: "./src/index.html",
-  filename: "./index.html",
-  favicon: "./favicon.ico",
-});
 
 module.exports = {
   entry: entryPoint,
@@ -66,7 +61,21 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    htmlPlugin,
+    new HtmlWebPackPlugin({
+      title: "Sabka Bazar",
+      template: "./src/index.html",
+      filename: "./index.html",
+      favicon: "./favicon.ico",
+    }),
+    new ImageminPlugin({
+      cacheFolder: "./.cache",
+      externalImages: {
+        context: "static", // Important! This tells the plugin where to "base" the paths at
+        sources: glob.sync("./static/images/**/*.{jpg,png}"),
+        destination: "static/images",
+        fileName: "[path][name].[ext]", // (filePath) => filePath.replace('jpg', 'webp') is also possible
+      },
+    }),
     new CleanWebpackPlugin(),
   ],
 };

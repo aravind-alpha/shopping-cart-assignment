@@ -1,0 +1,12 @@
+globalThis["webpackHotUpdatecode_exercise"]("main",{},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ "use strict";
+/******/ 
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("cfd4929ae477f7a3ac26")
+/******/ })();
+/******/ 
+/******/ }
+);
+//# sourceMappingURL=main.fdeb122b8fb5aa410d66.hot-update.js.map
