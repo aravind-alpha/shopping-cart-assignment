@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { updateCartItem } from "../../redux/action";
-import "./ProductCard.css";
+import { updateCartItem } from "../../redux/actions/rootAction";
+import "./ProductCard.scss";
 
 const ProductCard = (props) => {
   const { product } = props;

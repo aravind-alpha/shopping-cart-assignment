@@ -6,7 +6,7 @@ const applicationState = {
   filter: null,
 };
 
-function reducer(state = applicationState, action) {
+const rootReducer = (state = applicationState, action) => {
   switch (action.type) {
     case UPDATE_CART_ITEM: {
       const found = state.cart.find(
@@ -75,6 +75,6 @@ function reducer(state = applicationState, action) {
     default:
       return applicationState;
   }
-}
+};
 
-export default reducer;
+export default rootReducer;

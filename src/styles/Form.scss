@@ -1,3 +1,5 @@
+@import "../styles/global";
+
 .login-section,
 .signup-section {
   display: flex;
@@ -32,9 +34,9 @@
 }
 .login-section_formGroup input,
 .signup-section_formGroup input {
-  font-size: 1rem;
+  font-size: $extra-small-font;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $dark-grey-color;
   font-family: inherit;
   -webkit-appearance: none;
   border-radius: 0;
@@ -44,18 +46,18 @@
 .login-section_formGroup input:focus,
 .signup-section_formGroup input:focus {
   outline: 0;
-  border-bottom: 1px solid #50dae2;
+  border-bottom: 1px solid $blue-color;
 }
 .login-section_formGroup input:focus + label,
 .signup-section_formGroup input:focus + label {
-  color: #50dae2;
-  font-size: 0.5rem;
+  color: $blue-color;
+  font-size: $extra-small;
 }
 .login-section_formGroup label,
 .signup-section_formGroup label {
   letter-spacing: 0.05em;
-  font-size: 0.5rem;
-  color: #999999;
+  font-size: $extra-small;
+  color: $light-black-color;
 }
 .login-section_formGroup input:placeholder-shown + label,
 .signup-section_formGroup input:placeholder-shown + label {
@@ -65,7 +67,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 1.8rem) scale(1.5);
+  transform: translate(0, $semi-large) scale(1.5);
 }
 .login-section_formGroup ::-webkit-input-placeholder,
 .signup-section_formGroup ::-webkit-input-placeholder {
@@ -96,15 +98,16 @@
 }
 .login-section-desc,
 .signup-section-desc {
-  font-size: 0.8rem;
+  font-size: $semi-small;
 }
 .btn--login,
 .btn--signup {
-  background-color: #bf2957;
+  background-color: $pink-color;
   border: none;
   width: 100%;
-  padding: 0.5rem !important;
-  color: #fff;
+  font-size: $semi-small;
+  padding: $extra-small !important;
+  color: $white-color;
   box-sizing: border-box;
   border-bottom: 0px solid transparent !important;
 }

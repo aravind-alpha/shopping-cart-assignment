@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { updateCartItem, removeCartItem } from "../../redux/action";
-import "./Cart.css";
+import { updateCartItem, removeCartItem } from "../../redux/actions/rootAction";
+import "./Cart.scss";
 
 const Cart = (props) => {
   const { item, cart } = useSelector((state) => state);

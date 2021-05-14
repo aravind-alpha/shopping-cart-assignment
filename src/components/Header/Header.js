@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Cart from "../Cart/Cart.js";
 import Logo from "../../../static/images/logo.png";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
   const [openCart, setOpenCart] = useState(false);

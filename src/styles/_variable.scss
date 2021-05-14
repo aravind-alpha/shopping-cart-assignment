@@ -1,0 +1,42 @@
+// colors
+$white-color: #ffffff;
+$black-color: #000000;
+$light-black-color: #999999;
+$dark-grey-color: #eaeaea;
+$grey-color: #f3f3f3;
+$pink-color: #bf2957;
+$blue-color: #50dae2;
+
+// screen size
+$tab: 575px;
+$desktop: 770px;
+
+// font-sizes
+$extra-small: 0.5rem;
+$semi-small: 0.8rem;
+$small: 1rem;
+$medium: 1.4rem;
+$semi-large: 1.8rem;
+$large: 2rem;
+$extra-large: 4rem;
+
+// font-size
+$extra-small-font: 1rem;
+$small-font: 1.2rem;
+$medium-font: 1.6rem;
+$semi-large-font: 1.8rem;
+$large-font: 2rem;
+$extra-large-font: 2.4rem;
+
+// heights
+$small-height: 10rem;
+$medium-height: 15rem;
+$large-height: 20rem;
+
+// box-shadow
+$box-shadow: 0 25px 31px -20px $dark-grey-color;
+$header-shadow: 0px 2px 5px 2px $dark-grey-color;
+
+// card-border
+$card-border: 1px solid rgba(0, 0, 0, 0.121569);
+$product-list-border: 1px solid $light-black-color;

@@ -1,3 +1,5 @@
+@import "../../styles/global";
+
 .product.container {
   display: flex;
   width: 75vw;
@@ -8,12 +10,12 @@
   display: none;
 }
 .btn-cta {
-  background: #bf2957;
+  background: $pink-color;
   border: none;
   padding: 10px;
   margin: 0 auto;
-  color: #ffffff;
-  font-size: 17px;
+  color: $white-color;
+  font-size: $semi-small;
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
   .product.container {
@@ -39,7 +41,7 @@
 }
 .product-category {
   flex: 0 0 25%;
-  background: #eaeaea;
+  background: $dark-grey-color;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .product-category {
@@ -52,11 +54,11 @@
   padding: 0px;
 }
 .product-category ul li {
-  color: #909090;
+  color: $light-black-color;
   font-size: 16px;
   padding: 10px 20px;
   cursor: pointer;
-  border-bottom: 1px solid #909090;
+  border-bottom: $product-list-border;
 }
 .product-list {
   display: flex;

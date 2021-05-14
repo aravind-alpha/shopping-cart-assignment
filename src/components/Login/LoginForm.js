@@ -2,7 +2,7 @@ import React from "react";
 // import { useHistory } from "react-router-dom";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import "./LoginForm.css";
+import "../../styles/Form.scss";
 
 const LoginFrom = () => {
   return (

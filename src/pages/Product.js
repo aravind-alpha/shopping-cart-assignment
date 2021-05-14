@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import ProductList from "../components/ProductList/ProductList";
 import ProductCard from "../components/ProductCard/ProductCard";
-import API from "../API/apiCalls";
+import API from "../services/utils";
 
 const Product = () => {
   const [data, setData] = useState([]);

@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { setFilter } from "../../redux/action";
-import "./ProductList.css";
+import { setFilter } from "../../redux/actions/rootAction";
+import "./ProductList.scss";
 
 const ProductList = (props) => {
   const { category } = props;

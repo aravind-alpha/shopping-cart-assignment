@@ -1,6 +1,5 @@
 import React, { useState, useEffect, lazy } from "react";
-import API from "../../API/apiCalls";
-import "./CarouselBanner.css";
+import API from "../../services/utils";
 
 const CarouselBanner = lazy(() => import("../Carousel/CarouselBanner"));
 

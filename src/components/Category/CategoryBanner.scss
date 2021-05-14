@@ -1,9 +1,11 @@
+@import "../../styles/_global.scss";
+
 .banner-component {
   display: flex;
   margin: 30px auto;
   justify-content: space-between;
   position: relative;
-  box-shadow: 0 25px 31px -20px rgba(0, 0, 0, 0.22);
+  box-shadow: $box-shadow;
   padding: 25px 0px;
 }
 
@@ -12,14 +14,14 @@
 }
 .banner-component .content p,
 .banner-component .content span {
-  font-size: 0.8rem;
+  font-size: $semi-small;
   text-align: center;
 }
 .banner-component .content a {
   text-decoration: none;
 }
 .banner-component .content .heading {
-  font-size: 1.2rem;
+  font-size: $small-font;
   display: block;
   text-align: center;
   font-weight: bold;
@@ -27,12 +29,12 @@
 }
 
 .banner-component .content .link-button {
-  background: #bf2957;
+  background: $pink-color;
   padding: 10px;
   border-radius: 3px;
 
   font-weight: 500;
-  color: #ffffff;
+  color: $white-color;
   margin: 15px auto;
   display: block;
   cursor: pointer;
@@ -42,7 +44,6 @@
 }
 .banner-component .image-container img {
   width: 100%;
-  /* height: inherit; */
 }
 .banner-component .content {
   width: 70%;
@@ -56,7 +57,7 @@
     width: 100%;
   }
   .banner-component .link-button {
-    font-size: 0.6rem;
+    font-size: $extra-small;
   }
   .banner-component .content {
     width: 60%;
@@ -77,11 +78,11 @@
   }
   .banner-component .content p,
   .banner-component .content span {
-    font-size: 0.7rem;
+    font-size: $semi-small;
     text-align: center;
   }
   .banner-component .link-button {
-    font-size: 0.6rem;
+    font-size: $extra-small;
   }
 }
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {

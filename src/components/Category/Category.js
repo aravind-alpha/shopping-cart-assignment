@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CategoryBanner from "./CategoryBanner";
-import API from "../../API/apiCalls";
+import API from "../../services/utils";
 
 const Category = () => {
   const [categories, setCategories] = useState([]);

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./CarouselBanner.css";
+import "./CarouselBanner.scss";
 
 const CarouselBanner = (props) => {
   const { banner } = props;
