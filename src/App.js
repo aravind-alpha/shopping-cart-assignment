@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/templates/Layout";
 import store from "./redux/store";
 import "./styles/_global.scss";
 import "slick-carousel/slick/slick.css";
